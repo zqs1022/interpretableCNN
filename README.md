@@ -1,1 +1,1 @@
-# interpretableCNN
+# Interpretable Convolutional Neural Networks
