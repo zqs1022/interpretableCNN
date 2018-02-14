@@ -15,18 +15,6 @@ isMultiClassClassification=false; %true;
 
 
 
-
-% model='alexnet';
-% dataset='ilsvrcanimalpart';
-% isMultiClassClassification=false;
-
-
-% model='alexnet';
-% dataset='vocpart';
-% isMultiClassClassification=true;
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Network configurations
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
