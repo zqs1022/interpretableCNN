@@ -188,7 +188,7 @@ end
 
 
 function drawRF(net,layerID,theConf,visualizationStep)
-drawThreshold=0.3;
+drawThreshold=0.5;
 
 root_ori=fullfile(theConf.output.dir,'img_ori');
 root_RF=fullfile(theConf.output.dir,'img_RF');
