@@ -9,7 +9,7 @@ This paper proposes a method to modify traditional convolutional neural networks
 # Citation
 
 Please cite the following paper, if you use this code.
-Quanshi Zhang, Ying Nian Wu, and Song-Chun Zhu, "Interpretable Convolutional Neural Networks," in arXiv:1710.00935, 2017
+Quanshi Zhang, Ying Nian Wu, and Song-Chun Zhu, "Interpretable Convolutional Neural Networks," in CVPR, 2018
 
 
 # How to use
