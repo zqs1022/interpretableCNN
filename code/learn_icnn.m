@@ -30,7 +30,7 @@ else
       imdb=getImdb(conf.data.Name_batch,conf,net.meta,IsTrain);
   end
   mkdir(opts.expDir);
-  save(opts.imdbPath,'-struct','imdb');
+  save(opts.imdbPath,'-struct','imdb','-v7.3');
 end
 
 net.meta.classes.name=imdb.meta.classes(:)';
