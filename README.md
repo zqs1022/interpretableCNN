@@ -14,8 +14,12 @@ Quanshi Zhang, Ying Nian Wu, and Song-Chun Zhu, "Interpretable Convolutional Neu
 
 We released the code with slight technical extensions to the above paper for more robustness. For example, the code learned the parameter \beta instead of simply setting \beta=4.
 
+We will release the code based on PyTorch and TensorFlow, later.
+
 # How to use
 
 run demo.m
+
+Note that please set in the window of the MATLAB following "HOME --> Preferences --> MATLAB --> General --> MAT-Files --> MATLAB Version 7.3 or later." Thus, the Matlab can save large MAT files.
 
 Please see demo.m for detailed introduction of the code
