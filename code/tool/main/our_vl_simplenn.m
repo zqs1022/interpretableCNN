@@ -5,7 +5,7 @@ function res=our_vl_simplenn(net, x, dzdy, res, varargin)
 %%% Variables in this code (e.g., alpha, beta, alpha_logZ_XXX, and mask)
 %%% do not exactly represent concepts/notation with the same names in the paper.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+ 
 if(sum(x(:)<-10)==0)
     error('Errors in input');
 end
