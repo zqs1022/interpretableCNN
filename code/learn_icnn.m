@@ -1,4 +1,4 @@
-function [net,info]=learn_icnn(model,Name_batch)
+function [net,info]=learn_icnn(model,Name_batch,dropoutRate)
 load(['./mat/',Name_batch,'/conf.mat'],'conf');
 conf.data.Name_batch=Name_batch;
 opts.dataDir=conf.data.imgdir;
@@ -16,7 +16,7 @@ end
 
 %% Prepare model
 labelNum=1;
-net=network_init(labelNum,model,'networkType',opts.networkType);
+net=network_init(labelNum,model,dropoutRate,'networkType',opts.networkType);
 
 
 %% Prepare data

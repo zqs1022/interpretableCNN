@@ -79,9 +79,7 @@ net.meta.trainOpts.batchSize = bs ;
 net.meta.trainOpts.weightDecay = 0.0005 ;
 
 for layerID=1:numel(net.layers)
-    if(strcmp(net.layers{layerID}.type,'dropout'))
-        net.layers{layerID}.rate=dropoutRate;
-    end
+    if(strcmp(net.layers{layerID}.type,'drop)
 end
 
 % Fill in default values

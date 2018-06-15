@@ -1,4 +1,4 @@
-function [net,info]=learn_icnn_multiclass(model,Name_batch,lossType)
+function [net,info]=learn_icnn_multiclass(model,Name_batch,lossType,dropoutRate)
 load(['./mat/',Name_batch{1},'/conf.mat'],'conf');
 labelNum=numel(Name_batch);
 str=[];
@@ -28,7 +28,7 @@ end
 
 
 %% Prepare model
-net=network_init(labelNum,model,'networkType',opts.networkType);
+net=network_init(labelNum,model,dropoutRate,'networkType',opts.networkType);
 net.layers{end}.type=lossType;
 if(strcmp(lossType,'ourloss_softmaxlog'))
     if(labelNum>10)

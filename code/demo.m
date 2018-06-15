@@ -9,7 +9,7 @@ dataset='ilsvrcanimalpart'; %'vocpart'; 'cub200';
 categoryName='n02118333';
 % Choices of the networks. You may select 'vgg-vd-16', 'alexnet', 'vgg-m', or 'vgg-s'.
 model='vgg-vd-16'; % 'alexnet'; 'vgg-m'; 'vgg-s';
-
+dropoutRate=0.8; %0.5; 0.6; 0.7; 0.8; 0.9; %when using a small number of training samples, avoid over-fitting.
 % Learn a CNN for multi-class classification or single-class classification
 isMultiClassClassification=false; %true;
 
@@ -42,10 +42,10 @@ if(isMultiClassClassification)
     if(strcmp(dataset,'vocpart'))
         categoryName={'bird','cat','cow','dog','horse','sheep'};
         lossType='ourloss_logistic'; % 'ourloss_softmaxlog';
-        learn_icnn_multiclass(model,categoryName,lossType);
+        learn_icnn_multiclass(model,categoryName,lossType,dropoutRate);
     end
 else
-    learn_icnn(model,categoryName);
+    learn_icnn(model,categoryName,dropoutRate);
 end
 
 
