@@ -1,5 +1,8 @@
 # Interpretable Convolutional Neural Networks
 
+The python code has been released at https://github.com/ada-shen/ICNN, although this code was not implemented by my research group.
+
+The following Matlab code is the original code corresponding to the paper.
 
 # Introduction
 
@@ -7,8 +10,9 @@ This paper proposes a method to modify traditional convolutional neural networks
 
 # Citation
 
-Please cite the following paper, if you use this code.
-Quanshi Zhang, Ying Nian Wu, and Song-Chun Zhu, "Interpretable Convolutional Neural Networks," in CVPR 2018
+Please cite the following two papers, if you use this code.
+1. Quanshi Zhang, Ying Nian Wu, and Song-Chun Zhu, "Interpretable Convolutional Neural Networks" in CVPR 2018
+2. Quanshi Zhang, Xin Wang, Ying Nian Wu, Huilin Zhou, and Song-Chun Zhu, "Interpretable CNNs for Object Classification" in IEEE Transactions on Pattern Analysis and Machine Intelligence, 2020. DOI:10.1109/TPAMI.2020.2982882
 
 # Code
 
